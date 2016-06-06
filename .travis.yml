@@ -1,8 +1,8 @@
 language: java
 jdk:
-- oraclejdk8
+  - oraclejdk8
 before_script:
-- cd dev/web
+  - cd dev/web
 script: mvn clean install
 deploy:
   provider: heroku

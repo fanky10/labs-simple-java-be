@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar  target/simple-java-be.war
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar  target/simple-java-be.war

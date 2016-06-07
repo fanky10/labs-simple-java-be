@@ -1,6 +1,11 @@
 language: java
 jdk:
   - oraclejdk8
-  - oraclejdk7
 before_script:
   - cd dev/web
+deploy:
+  provider: heroku
+    api_key:
+      secure: R4JaGTXwRVVxQgeZfu/XINFtzcfTFx5MBuXUduEOYXFJ3PqESCqZmvN/Iq+3mfRQdefqxQHhu6Mw5eGqTxLx3gJkgbGVMbZ20i490eJqETmJMQlqAGwjoLizGcr1Ky3RRDTQMPdPLbRjQt+pUcKLVdS6SUpCjv5BJOOz/bksIF08IhBAm5j1t2j3RoauKIlNUvWe28n3Xletazcsn2s2RNA4l838loUxmVdLv3sE6D+h2VUBmZ/OaF/qqqhBQYFQS3irJHIE4m8mMtgad6WzsbsmJhj1BuKZRnrFYbTu4s97Wfklxzvqg0qLPMw3Ry35CSFaFmpk09uVtKp8F74qVn/hr8X8eARTxRKfhPzW3y+G+seSThvSiFerF7TrHRmvdXnELgSfyosjbP2hPawkYo/8ynbly+uk0KHNLocky2cU3x4ePmu2eF8wW0RY2VhRBgeUX97tS4DD/jp0zrQpYM9IwVjFOHRYLZ7ciA7aRv6+eNx34bKSpXhVXCqwRLHqy7WbshGv1EmIgnI7XKkwDKOwL8M4vp75SvjbiIB7oY+zCJu6gRs3ABD4ScWLY3VBl8LPbHb76HhZSvbAkLgyVF0qL/bCg+8PnplTWJapxjcge5u574DSCnMQfkI26BcoGPJQnCWqpWbaeTFw6DVrN+UWw5etQuGvfkUcxjmqDrE=
+    app: lab-java-be
+    on: master

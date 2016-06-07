@@ -1,11 +1,12 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 before_script:
-  - cd dev/web
+- cd dev/web
 deploy:
   provider: heroku
-    api_key:
-      secure: R4JaGTXwRVVxQgeZfu/XINFtzcfTFx5MBuXUduEOYXFJ3PqESCqZmvN/Iq+3mfRQdefqxQHhu6Mw5eGqTxLx3gJkgbGVMbZ20i490eJqETmJMQlqAGwjoLizGcr1Ky3RRDTQMPdPLbRjQt+pUcKLVdS6SUpCjv5BJOOz/bksIF08IhBAm5j1t2j3RoauKIlNUvWe28n3Xletazcsn2s2RNA4l838loUxmVdLv3sE6D+h2VUBmZ/OaF/qqqhBQYFQS3irJHIE4m8mMtgad6WzsbsmJhj1BuKZRnrFYbTu4s97Wfklxzvqg0qLPMw3Ry35CSFaFmpk09uVtKp8F74qVn/hr8X8eARTxRKfhPzW3y+G+seSThvSiFerF7TrHRmvdXnELgSfyosjbP2hPawkYo/8ynbly+uk0KHNLocky2cU3x4ePmu2eF8wW0RY2VhRBgeUX97tS4DD/jp0zrQpYM9IwVjFOHRYLZ7ciA7aRv6+eNx34bKSpXhVXCqwRLHqy7WbshGv1EmIgnI7XKkwDKOwL8M4vp75SvjbiIB7oY+zCJu6gRs3ABD4ScWLY3VBl8LPbHb76HhZSvbAkLgyVF0qL/bCg+8PnplTWJapxjcge5u574DSCnMQfkI26BcoGPJQnCWqpWbaeTFw6DVrN+UWw5etQuGvfkUcxjmqDrE=
-    app: lab-java-be
-    on: master
+  api_key:
+    secure: AzT7bqu/JSZS+Etb0bfUmVl/YF2AXiK9gKlGxu8n1Td+dyefeLz31EwmMQBF3A/5B3Ui2QKeIGatAWoyKcBG4SjiGg+nWWTfhISF7GK3OFu+OP7alTnPzDszVrE/1JCGvoAWde8vPSr2wkCMR4mGv1HnKwNFHSLr1G7hmwovA2Rp7+Jr2GQvgX1wvM+gGg1P6g1Jl2Pl6jIx3EHGwZppsw9T49iJgqD6ZmP/AeSSV6r77j99wbWSwjNKyTCzEhclsVv8eJxXMsvgoiUrUcPgxOmi2yEV0Rh1TyW/dIE+Sc0ICoFmiDiVWdIRjf5Ov+s/CiQx/XvzKVhCw+XoZPxZLq8VgX/ocRnWk/rOJPASe7oO5E2qYHxGHTrUt+3X/xhPc1M06cHJkFvYQv7kEO2nITfL2v79sLdkf7UyYtOc4pf0BNtwqDU1Tsd+vKl79Cae/CyLkOm/DN66sTSMNSkji9J+bTmg1FqFiMUy8Cp+xgEJPkxxaSk1Pr1TxUTQd7v67ZyezvZNM6m+PqQPqZUuP+KUkgczxF5vEaaPI2tFmf3254Msy0UFNTQ/hQ7roBWeRnTpHW21f9Din3b4OCh2Ao8mW0Pk7Q5Lx6c38zHiy/B1V0sFYIZOTHY+fLdfLbQHmrmdZYGC0RMy6LAz19vd1wJOzjMXzW+A91+bSmrZ2wE=
+  app: labs-simple-java-be
+  on:
+    repo: fanky10/labs-simple-java-be

@@ -5,8 +5,7 @@ before_script:
 - cd dev/web
 deploy:
   provider: heroku
-  api_key:
-    secure: AzT7bqu/JSZS+Etb0bfUmVl/YF2AXiK9gKlGxu8n1Td+dyefeLz31EwmMQBF3A/5B3Ui2QKeIGatAWoyKcBG4SjiGg+nWWTfhISF7GK3OFu+OP7alTnPzDszVrE/1JCGvoAWde8vPSr2wkCMR4mGv1HnKwNFHSLr1G7hmwovA2Rp7+Jr2GQvgX1wvM+gGg1P6g1Jl2Pl6jIx3EHGwZppsw9T49iJgqD6ZmP/AeSSV6r77j99wbWSwjNKyTCzEhclsVv8eJxXMsvgoiUrUcPgxOmi2yEV0Rh1TyW/dIE+Sc0ICoFmiDiVWdIRjf5Ov+s/CiQx/XvzKVhCw+XoZPxZLq8VgX/ocRnWk/rOJPASe7oO5E2qYHxGHTrUt+3X/xhPc1M06cHJkFvYQv7kEO2nITfL2v79sLdkf7UyYtOc4pf0BNtwqDU1Tsd+vKl79Cae/CyLkOm/DN66sTSMNSkji9J+bTmg1FqFiMUy8Cp+xgEJPkxxaSk1Pr1TxUTQd7v67ZyezvZNM6m+PqQPqZUuP+KUkgczxF5vEaaPI2tFmf3254Msy0UFNTQ/hQ7roBWeRnTpHW21f9Din3b4OCh2Ao8mW0Pk7Q5Lx6c38zHiy/B1V0sFYIZOTHY+fLdfLbQHmrmdZYGC0RMy6LAz19vd1wJOzjMXzW+A91+bSmrZ2wE=
+  api_key: d157f6c2-517b-45e7-8345-02900dc310f6
   app: labs-simple-java-be
   on:
     repo: fanky10/labs-simple-java-be

@@ -1,9 +1,18 @@
 language: java
 jdk:
 - oraclejdk8
+# handling submodules
+# Handle git submodules yourself
+git:
+  submodules: false
+
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+
 before_script:
-- git submodule update --init
-- cd dev/web
+  - cd dev/web
 deploy:
   provider: heroku
   api_key: d157f6c2-517b-45e7-8345-02900dc310f6
